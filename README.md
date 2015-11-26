@@ -1,2 +1,0 @@
-# PracticasIonic
-Practicas IONIC
