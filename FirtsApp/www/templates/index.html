@@ -1,0 +1,31 @@
+<ion-view title="Index!!">
+	<ion-content>
+			 <a href="#/page2/{{form.firstName}}/{{form.lastName}}/{{form.comments}}" class="button"> ir a pagina 2</a>
+	        <!-- <p>{{message}}</p> -->
+	        <button class="button" ng-click="showAlert()">Mostrar Mensaje</button>
+	       <ion-slide-box on-slide-changed="slideHasChanged($index)">
+				  <ion-slide>
+				    <div class="box blue"><h1>BLUE</h1></div>
+				  </ion-slide>
+				  <ion-slide>
+				    <div class="box yellow"><h1>YELLOW</h1></div>
+				  </ion-slide>
+				  <ion-slide>
+				    <div class="box pink"><h1>PINK</h1></div>
+				  </ion-slide>
+			</ion-slide-box>
+
+		<div class="list">
+		  <label class="item item-input">
+		    <input type="text" placeholder="First Name" ng-model="form.firstName">
+		  </label>
+		  <label class="item item-input">
+		    <input type="text" placeholder="Last Name"  ng-model="form.lastName">
+		  </label>
+		  <label class="item item-input">
+		    <textarea placeholder="Comments" ng-model="form.comments"></textarea>
+		  </label>
+		</div>
+
+	</ion-content>
+</ion-view>

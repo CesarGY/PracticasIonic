@@ -1,1 +1,18 @@
 /* Empty. Add your own CSS if you like */
+div.box.blue{
+	height: 300px;
+	background:blue;
+	color:white;
+}
+
+div.box.yellow{
+	height: 300px;
+	background:yellow;
+	color:white;
+}
+
+div.box.pink{
+	height: 300px;
+	background:pink;
+	color:white;
+}

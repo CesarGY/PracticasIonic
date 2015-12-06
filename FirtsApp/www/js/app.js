@@ -15,5 +15,26 @@ angular.module('starter', ['ionic'])
     if(window.StatusBar) {
       StatusBar.styleDefault();
     }
+
   });
-})
+});
+
+angular.module('starter').config(function($stateProvider,$urlRouterProvider){
+    $stateProvider.state("index",{
+          url : '/index',
+          templateUrl : 'templates/index.html',
+          controller : 'mainController'
+    }).
+
+    state('page2',{
+       url : '/page2/:firstName/:lastName/:comments',
+          templateUrl : 'templates/page2.html',
+          controller : 'Page2Controller'
+    });
+
+
+    $urlRouterProvider.otherwise('/index');
+
+
+
+});
